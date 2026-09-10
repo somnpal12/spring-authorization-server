@@ -1,0 +1,11 @@
+server:
+  port: 9090
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/EUROPE
+        username: postgres
+        password: postgres
+        driver-class-name: org.postgresql.Driver
+
+  

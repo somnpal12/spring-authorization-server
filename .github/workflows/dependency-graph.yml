@@ -1,0 +1,29 @@
+name: Dependency Graph
+
+on:
+  push:
+    branches: [main, development]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  submit-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+          cache: maven
+
+      - name: Submit Maven dependency graph
+        uses: advanced-security/maven-dependency-submission-action@v6.0.1
+        with:
+          ignore-maven-wrapper: true
