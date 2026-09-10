@@ -4,7 +4,7 @@ README.md.backup
 
 ### Maven ###
 target/
-.mvn/wrapper/maven-wrapper.jar
+x
 !**/src/main/**/target/
 !**/src/test/**/target/
 pom.xml.tag
@@ -14,8 +14,7 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.properties
+
 
 ### Gradle ###
 .gradle/
